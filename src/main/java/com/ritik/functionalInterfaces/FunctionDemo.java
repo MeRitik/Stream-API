@@ -1,4 +1,4 @@
-package com.ritik.streamapi;
+package com.ritik.functionalInterfaces;
 
 import java.util.function.Function;
 

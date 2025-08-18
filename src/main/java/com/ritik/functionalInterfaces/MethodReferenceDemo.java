@@ -1,7 +1,6 @@
-package com.ritik.streamapi;
+package com.ritik.functionalInterfaces;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class MethodReferenceDemo {
     // Method Reference: Use method without invoking & in place of lambda

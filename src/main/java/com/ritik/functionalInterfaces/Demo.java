@@ -1,4 +1,4 @@
-package com.ritik.streamapi;
+package com.ritik.functionalInterfaces;
 
 public class Demo {
     // Java 8 introduced Lambda Expressions, Streams, Date & Time API
