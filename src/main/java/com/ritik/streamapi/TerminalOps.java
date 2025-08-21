@@ -65,6 +65,9 @@ public class TerminalOps {
 
         */
 
-
+        List<Integer> nums1 = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        nums1.parallelStream()
+                .forEachOrdered(System.out::println);
+//                .forEach(System.out::println);
     }
 }

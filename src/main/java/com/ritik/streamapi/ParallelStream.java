@@ -1,6 +1,7 @@
 package com.ritik.streamapi;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 
 public class ParallelStream {
@@ -27,6 +28,13 @@ public class ParallelStream {
         // Parallel Streams are most effective for CPU-intensive or
         // large datasets where tasks are independent
         // They may add overhead for simple tasks or small datasets.
+
+        System.out.println("------------------------------------------------");
+
+        List<Integer> nums = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        AtomicInteger sum = new AtomicInteger(0);
+        nums.parallelStream().map(sum::addAndGet).sequential().forEach(System.out::println);
+
     }
 
 
