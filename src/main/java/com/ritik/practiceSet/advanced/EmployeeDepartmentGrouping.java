@@ -4,32 +4,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-enum Department {
-    HR, IT, QA, DEV
-}
-
-class Employee {
-    private String name;
-    private Department department;
-
-    Employee(String name, Department department) {
-        this.name = name;
-        this.department = department;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", department=" + department +
-                '}';
-    }
-
-    public Department getDepartment() {
-        return this.department;
-    }
-}
-
 public class EmployeeDepartmentGrouping {
     public static void main(String[] args) {
         List<Employee> employees = List.of(
