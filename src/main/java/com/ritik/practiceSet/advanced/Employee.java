@@ -20,7 +20,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    Employee(String name, Department department, int salary, Gender gender) {
+    public Employee(String name, Department department, int salary, Gender gender) {
         this(name, department, salary);
         this.gender = gender;
     }
