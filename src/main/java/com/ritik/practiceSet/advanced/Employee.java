@@ -9,9 +9,9 @@ enum Gender {
 }
 
 public class Employee {
-    private String name;
-    private Department department;
-    private int salary;
+    private final String name;
+    private final Department department;
+    private final int salary;
     private Gender gender = Gender.MALE;
 
     Employee(String name, Department department, int salary) {
