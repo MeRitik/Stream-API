@@ -3,21 +3,20 @@ package com.ritik.practiceSet.expert;
 import java.io.*;
 import java.nio.file.Files;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 class CrimeData {
-    private int SlNo;
-    private String State_UT;
-    private float n2020;
-    private float n2021;
-    private float n2022;
-    private float midYearProjectedPopulation;
-    private float rateOfCognizableCrimes;
-    private float chargesheetRate;
+    private final int SlNo;
+    private final String State_UT;
+    private final float n2020;
+    private final float n2021;
+    private final float n2022;
+    private final float midYearProjectedPopulation;
+    private final float rateOfCognizableCrimes;
+    private final float chargeSheetRate;
 
     public CrimeData(int slNo, String state_UT, float n2020, float n2021, float n2022,
-                     float midYearProjectedPopulation, float rateOfCognizableCrimes, float chargesheetRate) {
+                     float midYearProjectedPopulation, float rateOfCognizableCrimes, float chargeSheetRate) {
 
         SlNo = slNo;
         State_UT = state_UT;
@@ -26,7 +25,7 @@ class CrimeData {
         this.n2022 = n2022;
         this.midYearProjectedPopulation = midYearProjectedPopulation;
         this.rateOfCognizableCrimes = rateOfCognizableCrimes;
-        this.chargesheetRate = chargesheetRate;
+        this.chargeSheetRate = chargeSheetRate;
     }
 
     @Override
@@ -39,7 +38,7 @@ class CrimeData {
                 ", n2022=" + n2022 +
                 ", midYearProjectedPopulation=" + midYearProjectedPopulation +
                 ", rateOfCognizableCrimes=" + rateOfCognizableCrimes +
-                ", chargesheetRate=" + chargesheetRate +
+                ", chargesheetRate=" + chargeSheetRate +
                 '}';
     }
 }
